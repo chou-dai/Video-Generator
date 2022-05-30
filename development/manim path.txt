@@ -1,0 +1,2 @@
+C:\Users\c.daiki\AppData\Local\Programs\Python\Python39\Lib\site-packages\manim
+https://dev-asteer-parts.296.works/_sys/
