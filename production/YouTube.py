@@ -38,7 +38,7 @@ for n in range(len(path)):
 # タイトル・概要欄
 ttl = '/production/概要欄/タイトル.txt'
 text = '/production/概要欄/概要欄.txt'
-youtube = 'C:/Users/c.daiki/Desktop/production/YouTube'
+youtube = '/production/YouTube'
 shutil.copy(ttl, youtube)
 shutil.copy(text, youtube)
 
