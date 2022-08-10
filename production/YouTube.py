@@ -53,9 +53,8 @@ except FileNotFoundError:
 
 # BGM
 videoPath = '/production/media/videos/main/1080p60/InteractiveDevlopment.mp4'
-# videoPath = 'C:/Users/c.daiki/Desktop/production/media/videos/shorts/1080p60/InteractiveDevlopment.mp4'
-samplePath = 'C:/Users/c.daiki/Desktop/production/bgm/' + BGM +'.mp3'
-bgmPath = 'C:/Users/c.daiki/Desktop/production/bgm/bgm.mp3'
+samplePath = '/production/bgm/' + BGM +'.mp3'
+bgmPath = '/production/bgm/bgm.mp3'
 shutil.copy(samplePath, bgmPath)
 cap = cv2.VideoCapture(videoPath)
 time = cap.get(cv2.CAP_PROP_FRAME_COUNT) / cap.get(cv2.CAP_PROP_FPS)
