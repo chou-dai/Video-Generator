@@ -23,27 +23,27 @@ def remove(path):
 
 # 削除
 path = [
-  'C:/Users/c.daiki/Desktop/production/media/videos/main/480p15/partial_movie_files/InteractiveDevlopment/*', 
-  'C:/Users/c.daiki/Desktop/production/media/videos/main/1080p60/partial_movie_files/InteractiveDevlopment/*', 
-  'C:/Users/c.daiki/Desktop/production/media/videos/thumbnail/480p15/partial_movie_files/InteractiveDevlopment/*',
-  'C:/Users/c.daiki/Desktop/production/media/videos/shorts/480p15/partial_movie_files/InteractiveDevlopment/*',
-  'C:/Users/c.daiki/Desktop/production/media/videos/shorts/1080p60/partial_movie_files/InteractiveDevlopment/*',
-  'C:/Users/c.daiki/Desktop/production/media/images/main/*',
-  'C:/Users/c.daiki/Desktop/production/media/texts/*',
-  'C:/Users/c.daiki/Desktop/production/YouTube/*'
+  '/production/media/videos/main/480p15/partial_movie_files/InteractiveDevlopment/*', 
+  '/production/media/videos/main/1080p60/partial_movie_files/InteractiveDevlopment/*', 
+  '/production/media/videos/thumbnail/480p15/partial_movie_files/InteractiveDevlopment/*',
+  '/production/media/videos/shorts/480p15/partial_movie_files/InteractiveDevlopment/*',
+  '/production/media/videos/shorts/1080p60/partial_movie_files/InteractiveDevlopment/*',
+  '/production/media/images/main/*',
+  '/production/media/texts/*',
+  '/production/YouTube/*'
 ]
 for n in range(len(path)):
   remove(path[n])
 
 # タイトル・概要欄
-ttl = 'C:/Users/c.daiki/Desktop/production/概要欄/タイトル.txt'
-text = 'C:/Users/c.daiki/Desktop/production/概要欄/概要欄.txt'
+ttl = '/production/概要欄/タイトル.txt'
+text = '/production/概要欄/概要欄.txt'
 youtube = 'C:/Users/c.daiki/Desktop/production/YouTube'
 shutil.copy(ttl, youtube)
 shutil.copy(text, youtube)
 
 # サムネイル
-thum = 'C:/Users/c.daiki/Desktop/production/media/images/thumbnail/InteractiveDevlopment_ManimCE_v0.7.0.png'
+thum = '/production/media/images/thumbnail/InteractiveDevlopment_ManimCE_v0.7.0.png'
 today = datetime.datetime.now()
 png = youtube + '/{}月{}日 プロ野球ニュース.png'.format(today.month, today.day)
 try:
@@ -52,7 +52,7 @@ except FileNotFoundError:
   print('サムネイルがありません')
 
 # BGM
-videoPath = 'C:/Users/c.daiki/Desktop/production/media/videos/main/1080p60/InteractiveDevlopment.mp4'
+videoPath = '/production/media/videos/main/1080p60/InteractiveDevlopment.mp4'
 # videoPath = 'C:/Users/c.daiki/Desktop/production/media/videos/shorts/1080p60/InteractiveDevlopment.mp4'
 samplePath = 'C:/Users/c.daiki/Desktop/production/bgm/' + BGM +'.mp3'
 bgmPath = 'C:/Users/c.daiki/Desktop/production/bgm/bgm.mp3'
