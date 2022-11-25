@@ -1,4 +1,4 @@
-# movie-program
+# Movie Generator
 pythonライブラリmanimを用いた動画作成
 
 YouTube
